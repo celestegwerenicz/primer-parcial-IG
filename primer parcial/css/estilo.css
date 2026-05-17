@@ -1,0 +1,86 @@
+*{ 
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 0;
+    font-family: 'Abel', sans-serif;
+
+    background-image: url(../img/fondo.png);
+
+}
+
+header, main, aside, footer, .uno, .dos, .tres{
+    background: rgba(169, 213, 255, 0.9);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+header{
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.foto-principal{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+nav ul{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li{
+	display: inline-block;	
+}
+nav a{
+    font-size: 1.5em;
+	line-height: 2.2em;
+	padding: 0.4em 1em;
+	text-align: center;
+	text-decoration: none;
+}
+
+a:link{
+	color: rgb(6, 40, 61);
+}
+a:visited{
+	color: rgb(37, 109, 133);
+}
+a:hover{
+	color: rgb(71, 181, 255);
+}
+a:active{
+	color: rgb(223, 246, 255);
+}
+
+
+.layout{
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.left{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+aside{
+  flex: 1;
+}
+
+footer{
+    text-align: center;
+}
