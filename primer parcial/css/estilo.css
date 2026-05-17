@@ -11,23 +11,43 @@ body{
 
 }
 
-header, main, aside, footer, .uno, .dos, .tres{
-    background: rgba(169, 213, 255, 0.9);
+h1, h2{
+    color: rgb(6, 40, 61) ;
+}
+
+header, main, aside, footer, .otra{
+    background: rgba(150, 230, 255, 0.9);
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
 }
 
-header{
-  display: flex;
-  gap: 2rem;
-  align-items: flex-start;
+.actual{
+    background: rgba(100, 200, 255, 0.9);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
 }
 
-.foto-principal{
+
+header{
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
+  align-items: flex-start;
+  font-size: 110%;
+    padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.foto-principal {
+  flex-shrink: 0; 
+  height: auto;
+  max-width: 325px;
+}
+
+.titulo {
+  flex: 1;  
 }
 
 nav ul{
@@ -66,7 +86,7 @@ a:active{
 
 .layout{
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   align-items: flex-start;
 }
 
@@ -74,13 +94,17 @@ a:active{
   flex: 2;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 aside{
-  flex: 1;
+  flex: 0.5;
 }
 
 footer{
     text-align: center;
+}
+
+main{
+     font-size: 125%;
 }
